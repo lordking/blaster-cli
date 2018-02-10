@@ -39,34 +39,16 @@ export PATH
 $ source ~/.bash_profile
 ```
 
-### 1.2 Godep安装
+### 1.2 依赖库
 
-Godep是一个golang库包管理工具。
-
-```bash
-# 安装命令
-$ go get -u github.com/tools/godep
-```
-
-## 2 Godep的基本用法介绍
-
-保存依赖库
-```
-godep save
+```shell
+$ go get -u github.com/Sirupsen/logrus
+$ go get -u github.com/spf13/viper
+$ go get -u github.com/gin-gonic/gin
+$ go get -u github.com/spf13/cobra
 ```
 
-恢复依赖库
-```
-godep restore
-```
 
-编译运行
-```
-godep go run main.go
-godep go build
-godep go install
-godep go test
-```
 
 ## 3 安装说明
 
@@ -108,3 +90,4 @@ Example:
 ```bash
 $ blaster-cli new database-mongo mongo_test
 ```
+
